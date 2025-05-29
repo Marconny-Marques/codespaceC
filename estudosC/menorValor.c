@@ -9,20 +9,21 @@ int main(){
 
     while(cont!=0) {
         printf("Digite o valor 1", &num2);
-        scanf("%.2f", num1);
+        scanf("%f", &num1);
 
         printf("Digite o valor 2", &num2);
-        scanf("%.2f", num2);
+        scanf("%f", &num2);
 
         printf("Digite o valor 3", &num3);
-        scanf("%.2f", num3);
+        scanf("%f", &num3);
 
         if(num1< num2 && num3) {
-            printf("O menor valor é: ", num1);
+            menor = num1;
+            printf("O menor valor é: %d", num1);
         } else if (num2 < num1 && num3){
-            printf("O menor valor é: ", num2);
+            menor = num2;
         } else {
-            printf("O menor valor é: ", num3);
+            menor = num3;
         }
     }
 
